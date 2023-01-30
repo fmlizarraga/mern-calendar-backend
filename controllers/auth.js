@@ -95,6 +95,8 @@ exports.renewToken = async( req, res = response ) => {
     res.json({
         ok: true,
         msg: 'token validated and renewed',
+        uid: req.uid,
+        name: req.name,
         token
     });
 };
